@@ -1,0 +1,15 @@
+<h1>Crée ton gossip</h1>
+
+</br>
+
+<form action='/gossip/new' method="POST">
+    <p>Quel est ton gossip (ton anonymat sera conservé)</p>
+    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>" >
+    <input type="text" name="anonym_auth">
+    </br></br>
+    <p>Qu'est-ce que tu as à nous raconter?</p>
+    <input placeholder="écris ton ragot ici" type="textarea" name="cont">
+    </br></br>
+    <p>Oublies pas de valider</p>
+    <input type="submit" name="Send">
+</form>
